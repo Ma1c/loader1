@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="AvaloniaApplication1.Views.LoginView">
+    <StackPanel Spacing="16">
+        <TextBlock Text="Sign in" Classes="heading" />
+        <TextBlock Text="Use any non-empty login and password (demo)." Classes="muted" TextWrapping="Wrap" />
+
+        <StackPanel Spacing="6">
+            <TextBlock Text="Username" Classes="muted" FontSize="12" />
+            <TextBox x:Name="UsernameBox" Classes="app-field" PlaceholderText="Enter username" />
+        </StackPanel>
+
+        <StackPanel Spacing="6">
+            <TextBlock Text="Password" Classes="muted" FontSize="12" />
+            <TextBox x:Name="PasswordBox"
+                     Classes="app-field"
+                     PlaceholderText="Enter password"
+                     PasswordChar="*" />
+        </StackPanel>
+
+        <Button x:Name="SignInButton"
+                Classes="primary"
+                Content="Sign in"
+                HorizontalAlignment="Stretch"
+                Margin="0,8,0,0" />
+    </StackPanel>
+</UserControl>

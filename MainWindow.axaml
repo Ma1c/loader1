@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="480"
+        d:DesignHeight="620"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Title="Loader"
+        Width="480"
+        Height="620"
+        MinWidth="480"
+        MinHeight="620"
+        MaxWidth="480"
+        MaxHeight="620"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource BrushWindowBg}">
+    <Panel>
+        <Border Width="400"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="24"
+                Padding="24"
+                Background="{StaticResource BrushSurface}"
+                BorderBrush="{StaticResource BrushBorder}"
+                BorderThickness="1"
+                CornerRadius="16"
+                BoxShadow="0 8 32 0 #40000000">
+            <ContentPresenter x:Name="Shell"
+                              HorizontalContentAlignment="Stretch"
+                              VerticalContentAlignment="Stretch" />
+        </Border>
+    </Panel>
+</Window>

@@ -1,0 +1,41 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="AvaloniaApplication1.Views.MainView"
+             MinHeight="300">
+    <StackPanel Spacing="20" VerticalAlignment="Top">
+        <TextBlock Text="Session" Classes="heading" />
+        <TextBlock x:Name="StatusText"
+                   Text="Ready"
+                   Classes="muted"
+                   TextWrapping="Wrap" />
+
+        <StackPanel Spacing="6">
+            <TextBlock Text="Version" Classes="muted" FontSize="12" />
+            <ComboBox x:Name="VersionCombo"
+                      Classes="app-versions"
+                      HorizontalAlignment="Stretch"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="1.0.0" />
+                <ComboBoxItem Content="1.1.0" />
+                <ComboBoxItem Content="2.0.0-beta" />
+            </ComboBox>
+        </StackPanel>
+
+        <Button x:Name="InjectButton"
+                Classes="primary"
+                Content="Inject"
+                HorizontalAlignment="Stretch" />
+
+        <Border Height="3"
+                CornerRadius="2"
+                Background="{StaticResource BrushBorder}"
+                Margin="0,4,0,0">
+            <Border x:Name="ProgressFill"
+                    Height="3"
+                    HorizontalAlignment="Left"
+                    Width="0"
+                    CornerRadius="2"
+                    Background="{StaticResource BrushAccentPurpleSoft}" />
+        </Border>
+    </StackPanel>
+</UserControl>
