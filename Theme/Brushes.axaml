@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Thickness x:Key="CardPadding">24</Thickness>
+
+    <Color x:Key="ColorWindowDeep">#1A0F2E</Color>
+    <Color x:Key="ColorWindowDarker">#12081F</Color>
+    <Color x:Key="ColorSurface">#2F2644</Color>
+    <Color x:Key="ColorBorder">#5C4D78</Color>
+    <Color x:Key="ColorTextPrimary">#F4EDFF</Color>
+    <Color x:Key="ColorTextMuted">#A89BC4</Color>
+    <Color x:Key="ColorAccentGreen">#2FD38A</Color>
+    <Color x:Key="ColorAccentGreenPressed">#24B374</Color>
+    <Color x:Key="ColorAccentPurple">#B56BFF</Color>
+    <Color x:Key="ColorAccentPurpleSoft">#7E5FD9</Color>
+
+    <LinearGradientBrush x:Key="BrushWindowBg" StartPoint="0%,0%" EndPoint="100%,100%">
+        <GradientStop Offset="0" Color="{StaticResource ColorWindowDeep}" />
+        <GradientStop Offset="1" Color="{StaticResource ColorWindowDarker}" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="BrushSurface" Color="{StaticResource ColorSurface}" />
+    <SolidColorBrush x:Key="BrushBorder" Color="{StaticResource ColorBorder}" />
+    <SolidColorBrush x:Key="BrushTextPrimary" Color="{StaticResource ColorTextPrimary}" />
+    <SolidColorBrush x:Key="BrushTextMuted" Color="{StaticResource ColorTextMuted}" />
+    <SolidColorBrush x:Key="BrushAccentGreen" Color="{StaticResource ColorAccentGreen}" />
+    <SolidColorBrush x:Key="BrushAccentGreenPressed" Color="{StaticResource ColorAccentGreenPressed}" />
+    <SolidColorBrush x:Key="BrushAccentPurple" Color="{StaticResource ColorAccentPurple}" />
+    <SolidColorBrush x:Key="BrushAccentPurpleSoft" Color="{StaticResource ColorAccentPurpleSoft}" />
+</ResourceDictionary>
